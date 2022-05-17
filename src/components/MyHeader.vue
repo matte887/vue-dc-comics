@@ -6,7 +6,12 @@
         </div>
         <nav>
             <ul class="header__menu">
-                <li v-for="(item, index) in headerLinks" v-key="index"><a href="">{{item.text}}</a></li>
+                <li 
+                v-for="(item, index) in headerLinks" 
+                v-key="index"
+                :class="{active : item.active}">
+                    <a href="">{{item.text}}</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -83,6 +88,18 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.active a {
+    color: $brand-primary-color;
+}
+
+li.active {
+    border-bottom: 3px solid $brand-primary-color;
+}
+
+li {
+    line-height: 147px;
 }
 
 .header__logo {
