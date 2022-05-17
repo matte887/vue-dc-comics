@@ -20,7 +20,7 @@ export default {
     MyHeader,
     MyFooter,
     MyBlueNav,
-},
+  },
 };
 </script>
 
