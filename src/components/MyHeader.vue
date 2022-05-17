@@ -1,13 +1,15 @@
 <template>
 <header>
-    <div class="header__logo">
-        <img src="../assets/dc-logo.png" alt="">
+    <div class="container">
+        <div class="header__logo">
+            <img src="../assets/dc-logo.png" alt="">
+        </div>
+        <nav>
+            <ul class="header__menu">
+                <li v-for="(item, index) in headerLinks" v-key="index"><a href="">{{item.text}}</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul class="header__menu">
-            <li v-for="(item, index) in headerLinks" v-key="index"><a href="">{{item.text}}</a></li>
-        </ul>
-    </nav>
 </header>
 </template>
 
@@ -75,11 +77,16 @@ export default {
 
 <style scoped lang="scss">
 @import "../style/variables.scss";
-header {
+
+.container {
     height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header__logo {
+    width: 100px;
 }
 
 .header__menu {

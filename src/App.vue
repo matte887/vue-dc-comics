@@ -1,33 +1,29 @@
 <template>
   <div id="app">
-    <div class="container">
-      <MyHeader />
-      <main>
-        <h2>--> Content goes here <--</h2>
-      </main>
-    </div>
+    <MyHeader />
+    <main>
+      <h2>Content goes here</h2>
+    </main>
+    <MyFooter />
   </div>
 </template>
 
 <script>
 import MyHeader from "./components/MyHeader.vue";
+import MyFooter from "./components/MyFooter.vue";
 
 export default {
   name: "App",
   components: {
     MyHeader,
-  },
+    MyFooter,
+},
 };
 </script>
 
 <style lang="scss">
 @import "./style/commons.scss";
 @import "./style/variables.scss";
-
-.container {
-  width: 70%;
-  margin: 0 auto;
-}
 
 main {
   width: 100%;
