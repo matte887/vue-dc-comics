@@ -4,6 +4,7 @@
     <main>
       <h2>Content goes here</h2>
     </main>
+    <MyBlueNav />
     <MyFooter />
   </div>
 </template>
@@ -11,12 +12,14 @@
 <script>
 import MyHeader from "./components/MyHeader.vue";
 import MyFooter from "./components/MyFooter.vue";
+import MyBlueNav from "./components/MyBlueNav.vue";
 
 export default {
   name: "App",
   components: {
     MyHeader,
     MyFooter,
+    MyBlueNav,
 },
 };
 </script>

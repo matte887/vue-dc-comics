@@ -84,6 +84,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        height: 450px;
 
         .footer__menu {
             display: flex;
@@ -92,7 +93,7 @@ export default {
 
         .brand__logo {
             width: 60%;
-            height: 25vh;
+            height: 100%;
             background-image: url(../assets/dc-logo-bg.png);
             background-repeat: no-repeat;
             background-position-y: center;
@@ -102,7 +103,7 @@ export default {
 }
 
 .footer__col {
-    margin: 0 2rem;
+    margin-right: 4rem;
         h3 {
             color: white;
             margin-bottom: 1rem;
@@ -111,6 +112,7 @@ export default {
         }
         a {
             color: $footer-text-color;
+            font-weight: 300;
         }
 }
 
@@ -154,11 +156,9 @@ export default {
         display: flex;
     
     }    
-    
+
     &__social img {
         margin: 0 .5rem;
     }
 }
-
-
 </style>
