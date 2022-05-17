@@ -51,7 +51,8 @@ export default {
         }
 
         img {
-            width: 20%;
+            width: auto;
+            height: 33%;
             margin-right: 1rem;
         }
     }

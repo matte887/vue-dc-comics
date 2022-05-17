@@ -4,14 +4,25 @@
         <div class="footer__container">
             <div class="footer__menu">
                 <div class="footer__col">
-                    <h3>DC comics</h3>
-                    <ul>
-                        <li><a href="">Footer link</a></li>
-                        <li><a href="">Footer link</a></li>
-                        <li><a href="">Footer link</a></li>
-                        <li><a href="">Footer link</a></li>
-                        <li><a href="">Footer link</a></li>
-                    </ul>
+                    <div class="footer__col-up">
+                        <h3>DC comics</h3>
+                        <ul>
+                            <li><a href="">Footer link</a></li>
+                            <li><a href="">Footer link</a></li>
+                            <li><a href="">Footer link</a></li>
+                            <li><a href="">Footer link</a></li>
+                            <li><a href="">Footer link</a></li>
+                            <li><a href="">Footer link</a></li>
+                            <li><a href="">Footer link</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col-down">
+                        <h3>Shop</h3>
+                        <ul>
+                            <li><a href="">Footer link</a></li>
+                            <li><a href="">Footer link</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__col">
                     <h3>DC</h3>
@@ -106,7 +117,7 @@ export default {
     margin-right: 4rem;
         h3 {
             color: white;
-            margin-bottom: 1rem;
+            margin: 1rem 0;
             text-transform: uppercase;
             font-size: 1.2rem;
         }
