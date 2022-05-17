@@ -1,5 +1,5 @@
 <template>
-<footer>
+<footer class="footer">
     <div class="container">
         <div class="footer__container">
             <div class="footer__menu">
@@ -73,55 +73,57 @@ export default {
 @import "../style/variables.scss";
 @import "../style/commons.scss";
 
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-footer {
+.footer {
     width: 100%;
     background-image: url(../assets/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-.footer__menu {
-    display: flex;
-    padding: 5rem 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .footer__menu {
+            display: flex;
+            padding: 5rem 0;
+        }
+
+        .brand__logo {
+            width: 60%;
+            height: 25vh;
+            background-image: url(../assets/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: right;
+        }
+    }
 }
 
 .footer__col {
     margin: 0 2rem;
-}
-
-h3 {
-    color: white;
-}
-
-a {
-    color: $footer-text-color;
-}
-
-.brand__logo {
-    width: 60%;
-    height: 25vh;
-    background-image: url(../assets/dc-logo-bg.png);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: right;
+        h3 {
+            color: white;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+        a {
+            color: $footer-text-color;
+        }
 }
 
 .footer__bottom {
     background-color: $footer-bottom-color;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.footer__bottom .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .footer__register {
     color: white;
@@ -141,16 +143,22 @@ a {
     margin-right: 1rem;
 }
 
-.footer-bottom__col-right {
-    display: flex;
-    align-items: center;
+
+.footer-bottom {
+    &__col-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__social {
+        display: flex;
+    
+    }    
+    
+    &__social img {
+        margin: 0 .5rem;
+    }
 }
 
-.footer-bottom__social {
-    display: flex;
-}
 
-.footer-bottom__social img {
-    margin: 0 .5rem;
-}
 </style>

@@ -1,5 +1,5 @@
 <template>
-<header>
+<header class="header">
     <div class="container">
         <div class="header__logo">
             <img src="../assets/dc-logo.png" alt="">
@@ -90,33 +90,33 @@ export default {
     align-items: center;
 }
 
-.active a {
-    color: $brand-primary-color;
+.header {
+    &__menu {
+        list-style: none;
+        display: flex;
+
+        li {
+            text-transform: uppercase;
+            margin: 0 1rem;
+            font-weight: bold;
+            line-height: 147px;
+            a {
+                color: $header-text-color;
+            }
+        }
+
+        li.active {
+            border-bottom: 3px solid $brand-primary-color;
+        }
+        
+        li.active a {
+            color: $brand-primary-color;
+        }
+    }
+    
+    &__logo {
+        width: 100px;
+    }
 }
 
-li.active {
-    border-bottom: 3px solid $brand-primary-color;
-}
-
-li {
-    line-height: 147px;
-}
-
-.header__logo {
-    width: 100px;
-}
-
-.header__menu {
-    list-style: none;
-    display: flex;
-}
-
-li {
-    text-transform: uppercase;
-    margin: 0 1rem;
-}
-
-a {
-    color: $header-text-color;
-}
 </style>
