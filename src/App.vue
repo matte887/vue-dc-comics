@@ -2,7 +2,7 @@
   <div id="app">
     <MyHeader />
     <main>
-      <h2>Content goes here</h2>
+      <MyComicList />
     </main>
     <MyBlueNav />
     <MyFooter />
@@ -13,6 +13,7 @@
 import MyHeader from "./components/MyHeader.vue";
 import MyFooter from "./components/MyFooter.vue";
 import MyBlueNav from "./components/MyBlueNav.vue";
+import MyComicList from "./components/MyComicList.vue";
 
 export default {
   name: "App",
@@ -20,6 +21,7 @@ export default {
     MyHeader,
     MyFooter,
     MyBlueNav,
+    MyComicList,
   },
 };
 </script>
@@ -30,7 +32,6 @@ export default {
 
 main {
   width: 100%;
-  height: 150px;
   background-color: $main-background-color;
   h2 {
     color: white;
