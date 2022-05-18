@@ -1,26 +1,26 @@
 <template>
   <div class="blue-nav">
     <div class="container">
-      <div class="blue-nav__card">
+      <a href="" class="blue-nav__card">
         <img src="../assets/buy-comics-digital-comics.png" alt="" />
         <span>Digital comics</span>
-      </div>
-      <div class="blue-nav__card">
+      </a>
+      <a href="" class="blue-nav__card">
         <img src="../assets/buy-comics-merchandise.png" alt="" />
         <span>DC merchandise</span>
-      </div>
-      <div class="blue-nav__card">
+      </a>
+      <a href="" class="blue-nav__card">
         <img src="../assets/buy-comics-subscriptions.png" alt="" />
         <span>Subscription</span>
-      </div>
-      <div class="blue-nav__card">
+      </a>
+      <a href="" class="blue-nav__card">
         <img src="../assets/buy-comics-shop-locator.png" alt="" />
         <span>Comic shop locator</span>
-      </div>
-      <div class="blue-nav__card">
+      </a>
+      <a href="" class="blue-nav__card">
         <img src="../assets/buy-dc-power-visa.svg" alt="" />
         <span>DC power Visa</span>
-      </div>
+      </a>
     </div>
   </div>
 </template>
