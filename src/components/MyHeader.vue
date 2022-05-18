@@ -92,13 +92,16 @@ export default {
 }
 
 .header {
+  nav {
+    width: 80%;
+  }
   &__menu {
     list-style: none;
     display: flex;
+    justify-content: space-between;
 
     li {
       text-transform: uppercase;
-      margin: 0 1rem;
       font-weight: bold;
       line-height: 147px;
       a {
