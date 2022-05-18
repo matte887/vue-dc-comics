@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+      <div class="current-series">Current series</div>
     <div class="comics">
       <MyComicCard
         v-for="(item, index) in comics"
@@ -7,6 +8,7 @@
         :comicObj="item"
       />
     </div>
+    <a href="">Load more</a>
   </div>
 </template>
 
@@ -111,8 +113,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+@import "../style/commons.scss";
+.container {
+    position: relative;
+
+    a {
+        color: white;
+        background-color: $brand-primary-color;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 2rem auto;
+        display: inline-block;
+    }
+}
+
+.current-series {
+    background-color: $brand-primary-color;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
 .comics {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4rem;
 }
 </style>
