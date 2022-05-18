@@ -8,7 +8,9 @@
         :comicObj="item"
       />
     </div>
-    <a href="">Load more</a>
+    <div class="load-more">
+        <a href="">Load more</a>
+    </div>
   </div>
 </template>
 
@@ -118,15 +120,22 @@ export default {
 .container {
     position: relative;
 
-    a {
-        color: white;
-        background-color: $brand-primary-color;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        padding: 1rem;
-        margin: 2rem auto;
-        display: inline-block;
+    .load-more {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        a {
+            display: inline-block;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 1rem 5rem;
+            margin: 2rem auto;
+            background-color: $brand-primary-color;
+            color: white;
+        }
     }
+
 }
 
 .current-series {
