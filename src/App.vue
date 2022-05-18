@@ -2,6 +2,8 @@
   <div id="app">
     <MyHeader />
     <main>
+      <section class="jumbotron">
+      </section>
       <MyComicList />
     </main>
     <MyBlueNav />
@@ -33,6 +35,13 @@ export default {
 main {
   width: 100%;
   background-color: $main-background-color;
+
+  .jumbotron {
+    width: 100%;
+    height: 38vh;
+    background-image: url(./assets/jumbotron.jpg);
+  }
+
   h2 {
     color: white;
     text-align: center;
