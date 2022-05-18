@@ -62,11 +62,11 @@
         <div class="footer-bottom__col-right">
           <span class="footer-bottom__follow">Follow us</span>
           <div class="footer-bottom__social">
-            <img src="../assets/footer-facebook.png" alt="" />
-            <img src="../assets/footer-twitter.png" alt="" />
-            <img src="../assets/footer-youtube.png" alt="" />
-            <img src="../assets/footer-pinterest.png" alt="" />
-            <img src="../assets/footer-periscope.png" alt="" />
+            <a href=""><img src="../assets/footer-facebook.png" alt="" /></a>
+            <a href=""><img src="../assets/footer-twitter.png" alt="" /></a>
+            <a href=""><img src="../assets/footer-youtube.png" alt="" /></a>
+            <a href=""><img src="../assets/footer-pinterest.png" alt="" /></a>
+            <a href=""><img src="../assets/footer-periscope.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -165,7 +165,9 @@ export default {
     display: flex;
   }
 
-  &__social img {
+  &__social a {
+    width: 50px;
+    height: 50px;
     margin: 0 0.5rem;
   }
 }
