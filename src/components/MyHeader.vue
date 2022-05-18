@@ -10,8 +10,9 @@
             v-for="(item, index) in headerLinks"
             :key="index"
             :class="{ active: item.active }"
+            @click="changeActive(index)"
           >
-            <a href="">{{ item.text }}</a>
+            <a>{{ item.text }}</a>
           </li>
         </ul>
       </nav>
@@ -78,6 +79,16 @@ export default {
       ],
     };
   },
+  methods: {
+    changeActive(index) {
+      this.headerLinks.forEach(element => {
+        element.active = false;
+      });
+      if (this.headerLinks[index].active === false) {
+        this.headerLinks[index].active = true;
+      }
+    }
+  }
 };
 </script>
 

@@ -40,6 +40,9 @@ main {
     width: 100%;
     height: 38vh;
     background-image: url(./assets/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   h2 {
