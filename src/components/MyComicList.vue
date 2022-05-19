@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <div class="current-series">Current series</div>
+    <div class="current-series">Current series</div>
     <div class="comics">
       <MyComicCard
         v-for="(item, index) in comics"
@@ -9,7 +9,7 @@
       />
     </div>
     <div class="load-more">
-        <a href="">Load more</a>
+      <a href="">Load more</a>
     </div>
   </div>
 </template>
@@ -118,37 +118,34 @@ export default {
 @import "../style/variables.scss";
 @import "../style/commons.scss";
 .container {
-    position: relative;
+  .load-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-    .load-more {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        a {
-            display: inline-block;
-            font-size: 1rem;
-            text-transform: uppercase;
-            padding: 1rem 5rem;
-            margin: 2rem auto;
-            background-color: $brand-primary-color;
-            color: white;
-        }
+    a {
+      display: inline-block;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 1rem 5rem;
+      margin: 2rem auto;
+      background-color: $brand-primary-color;
+      color: white;
     }
-
+  }
 }
 
 .current-series {
-    background-color: $brand-primary-color;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    display: inline-block;
-    padding: 0.5rem 2rem;
-    position: absolute;
-    transform: translate(0, -50%);
+  background-color: $brand-primary-color;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  transform: translate(0, -50%);
 }
 
 .comics {
